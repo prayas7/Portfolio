@@ -1,27 +1,27 @@
 /* Global Styles */
 html, body {
     background-color: #f1efe5;
-    height: 100%; /* Ensures full height for the body */
-    margin: 0; /* Removes default margin */
-    font-family: Arial, sans-serif; /* Optional: sets a default font */
+    height: 100%; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
     scroll-behavior: smooth;
 }
 
 /* Section Styles */
 section {
-    height: 100vh; /* Each section takes full viewport height */
-    display: flex; /* Flexbox for alignment */
-    flex-direction: column; /* Stacks children vertically */
-    justify-content: center; /* Centers children vertically */
-    align-items: center; /* Centers children horizontally */
-    padding: 80px; /* Adds some padding */
-    text-align: center; /* Centers text in each section */
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 80px; 
+    text-align: center; 
 }
 /* Home Section Styling */
 .home-section {
     display: flex;
     align-items: center;
-    padding: 50px; /* Adjust padding as needed */
+    padding: 50px; 
 }
 
 .home-content {
@@ -32,129 +32,125 @@ section {
     font-size: 2.5rem;
 }
 
-
-
-
 /* Profile Image Style */
 .profile-image {
-    border-radius: 50%; /* Makes the image circular */
-    width: 450px; /* Increase the size as needed */
-    height: 450px; /* Increase the size as needed */
+    border-radius: 50%; 
+    width: 450px; 
+    height: 450px; 
     object-fit: cover;
-    display: auto; /* Ensures the image is block-level for proper centering */
-    margin:  20px; /* Centers the image horizontally */
+    display: auto; 
+    margin:  20px; 
   }
   
-
 /* Paragraph Styles */
 .home-paragraph,
 .about-paragraph {
-    max-width: 600px; /* Optional: limits the width of the paragraph */
-    margin: 0 auto; /* Centers the paragraph block */
-    padding: 0 20px; /* Optional: adds some horizontal padding */
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 /* Card Styles */
 .card {
-    width: 100%; /* Full width */
-    height: 100vh; /* Full viewport height */
-    margin: 20px 0; /* Vertical margin for spacing from other elements */
-    padding: 30px; /* Padding inside the card */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    background-color: #fff; /* Card background color */
-    display: flex; /* Flexbox for inner alignment */
-    flex-direction: column; /* Stacks children vertically */
-    justify-content: center; /* Centers children vertically */
-    align-items: center; /* Centers children horizontally */
+    width: 100%; 
+    height: 100vh; 
+    margin: 20px 0; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* Hover Effect for Cards */
 .card:hover {
-    transform: scale(1.02); /* Slightly enlarge card on hover */
+    transform: scale(1.02); 
 }
 
 /* Make cards responsive */
 @media (max-width: 768px) {
     .card {
-        margin: 10px; /* Reduce margin on smaller screens */
+        margin: 10px; 
     }
 }
 
 /* Navbar Styles */
 .navbar {
     display: flex;
-    flex-direction: row; /* Ensures the items are in a row */
-    justify-content: center; /* Centers the navbar items horizontally */
+    flex-direction: row; 
+    justify-content: center; 
     align-items: center;
-    background-color: #f1efe5; /* Background color */
-    padding: 15px 0; /* Padding around the navbar */
-    margin-top: 0; /* Remove any margin from the top */
-    position: fixed; /* Fixes the navbar at the top */
-    top: 0; /* Aligns it to the top of the viewport */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensures it stays above other content */
-    box-shadow: none; /* No shadow initially */
-    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+    background-color: #f1efe5; 
+    padding: 15px 0; 
+    margin-top: 0; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: none; 
+    transition: box-shadow 0.3s ease; 
 }
 .navbar.scrolled {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow when scrolled */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar-brand {
-    color: rgb(3, 0, 0); /* Change to your preferred text color */
-    font-size: 50px; /* Adjust the font size for your name */
-    font-weight: bold; /* Make it bold */
-    letter-spacing: 1px; /* Add some spacing between letters */
+    color: rgb(3, 0, 0); 
+    font-size: 50px; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
     font-family: 'Permanent Marker', cursive;
     margin-right:auto;
     margin-left:25px
 }
 
 .navbar-items {
-    display: flex; /* Ensure items are side by side */
+    display: flex; 
     margin-left: auto; 
     margin-right: 25px;
 
 }
 
 .nav-link {
-    color: rgb(2, 0, 0); /* Change to your preferred link color */
-    text-decoration: none; /* Removes underline */
-    margin: 0 20px; /* Space between nav items */
-    transition: color 0.3s; /* Smooth transition for color change */
+    color: rgb(2, 0, 0); 
+    text-decoration: none; 
+    margin: 0 20px; 
+    transition: color 0.3s; 
     font-size: 23px;
 }
 
 .nav-link:hover {
-    color: #ddd; /* Change color on hover */
+    color: #ddd; 
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column; 
     }
     
     .navbar-items {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column;
     }
 
     .nav-link {
-        margin: 10px 0; /* Adjust spacing for stacked items */
+        margin: 10px 0; 
     }
 }
 body {
-    padding-top: 80px; /* Adjust based on the height of your navbar */
+    padding-top: 80px; 
 }
 /* Project Styles */
 .project-card {
-    border: 1px solid #ccc; /* Adjust as needed */
-    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
     padding: 20px;
-    margin-top: 15px; /* Space between project cards */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    background-color: #fff; /* Background color */
+    margin-top: 15px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
 }
 /* .skills-container {
     display: flex;
@@ -174,83 +170,83 @@ body {
 }
 
 .skill-box:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
+    transform: scale(1.05); 
 }
 
 .github-link {
-    color: #007bff; /* Bootstrap primary color */
-    text-decoration: none; /* Remove underline */
-    margin-top: 10px; /* Space above link */
-    display: inline-block; /* Allow margin above */
+    color: #007bff; 
+    text-decoration: none; 
+    margin-top: 10px; 
+    display: inline-block; 
 }
 /* Skills Card Styles */
 
 .skills .card {
-    background-color: #ffffff; /* White background */
-    padding: 20px; /* Space inside the card */
-    margin: 20px; /* Space outside the card */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Skills Title Styles */
 .skills-title {
     font-weight: bold;
-    font-size: 4rem; /* Larger font size for heading */
-    margin-bottom: 10px; /* Space below the heading */
+    font-size: 4rem; 
+    margin-bottom: 10px; 
 }
 
 /* Skills Table Styles */
 .skills-table {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between columns */
+    display: flex; 
+    justify-content: space-between; 
 }
 
 /* Skills Column Styles */
 .skills-column {
-    flex: 1; /* Each column takes equal space */
-    margin-right: 20px; /* Space between columns */
+    flex: 1; 
+    margin-right: 20px;
 }
 
-/* Remove margin from last column */
+
 .skills-column:last-child {
-    margin-right: 0; /* No margin on the last column */
+    margin-right: 0; 
 }
 
 /* Skill Box Styles */
 .skill-boxx {
-    background-color: #e7f3ff; /* Light blue background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Space inside the box */
-    text-align: center; /* Center text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s, background-color 0.3s; /* Transition effect */
-    margin-bottom: 15px; /* Space between skill boxes */
+    background-color: #e7f3ff; 
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, background-color 0.3s; 
+    margin-bottom: 15px; 
     margin: 30px;
 }
 
 .skill-boxx:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    background-color: #cfe9ff; /* Darker blue on hover */
+    transform: scale(1.05); 
+    background-color: #cfe9ff; 
 }
 
 /* Skill Icon Styles */
 .skill-icon {
-    font-size: 2rem; /* Icon size */
-    margin-bottom: 10px; /* Space below the icon */
-    color: #007acc; /* Icon color */
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+    color: #007acc; 
 }
 
 /* Skill Name Styles */
 .skill-name {
-    font-size: 1.2rem; /* Font size for skill name */
-    font-weight: bold; /* Bold skill name */
+    font-size: 1.2rem; 
+    font-weight: bold; 
 }
 /*contact css*/
 footer {
-    background-color: #27272a; /* Background color */
-    padding: 100px 0; /* Increase padding for larger size */
-    color: white; /* Text color for contrast */
+    background-color: #27272a; 
+    padding: 100px 0; 
+    color: white; 
     text-align: center;
 }
 
@@ -272,13 +268,13 @@ footer p {
 }
 
 .social-links a {
-    color: white; /* Adjust for visibility */
+    color: white; 
     font-size: 1.5rem;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #1e90ff; /* Change to any hover color you like */
+    color: #1e90ff; 
 }
 /* footer .icon {
     font-size: 1rem; 

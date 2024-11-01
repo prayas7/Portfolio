@@ -4,7 +4,6 @@ const Contact = () => {
   return (
     <footer className="contact" id="contact">
       <h1 style={{ fontSize: '4rem', color: 'white' }}>Contact</h1><br/>
-      {/* <p>You can reach me via email at prayasgaur.pg57@gmail.com</p> */}
       <div className="social-links">
       <a href="prayasgaur.pg57@gmail.com" className="icon">
           <i className="fas fa-envelope"></i> 

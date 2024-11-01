@@ -1,6 +1,5 @@
-// Skills.jsx
 import React from 'react';
-import { FaJs, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa'; // Importing icons from react-icons
+import { FaJs, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa'; 
 
 const Skills = () => {
   const skillsColumn1 = [
