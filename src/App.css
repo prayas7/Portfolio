@@ -1,0 +1,299 @@
+/* Global Styles */
+html, body {
+    background-color: #f1efe5;
+    height: 100%; /* Ensures full height for the body */
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif; /* Optional: sets a default font */
+    scroll-behavior: smooth;
+}
+
+/* Section Styles */
+section {
+    height: 100vh; /* Each section takes full viewport height */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers children vertically */
+    align-items: center; /* Centers children horizontally */
+    padding: 80px; /* Adds some padding */
+    text-align: center; /* Centers text in each section */
+}
+/* Home Section Styling */
+.home-section {
+    display: flex;
+    align-items: center;
+    padding: 50px; /* Adjust padding as needed */
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+}
+.text-content h1 {
+    font-size: 2.5rem;
+}
+
+
+
+
+/* Profile Image Style */
+.profile-image {
+    border-radius: 50%; /* Makes the image circular */
+    width: 450px; /* Increase the size as needed */
+    height: 450px; /* Increase the size as needed */
+    object-fit: cover;
+    display: auto; /* Ensures the image is block-level for proper centering */
+    margin:  20px; /* Centers the image horizontally */
+  }
+  
+
+/* Paragraph Styles */
+.home-paragraph,
+.about-paragraph {
+    max-width: 600px; /* Optional: limits the width of the paragraph */
+    margin: 0 auto; /* Centers the paragraph block */
+    padding: 0 20px; /* Optional: adds some horizontal padding */
+}
+
+/* Card Styles */
+.card {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    margin: 20px 0; /* Vertical margin for spacing from other elements */
+    padding: 30px; /* Padding inside the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: #fff; /* Card background color */
+    display: flex; /* Flexbox for inner alignment */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers children vertically */
+    align-items: center; /* Centers children horizontally */
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    transform: scale(1.02); /* Slightly enlarge card on hover */
+}
+
+/* Make cards responsive */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    flex-direction: row; /* Ensures the items are in a row */
+    justify-content: center; /* Centers the navbar items horizontally */
+    align-items: center;
+    background-color: #f1efe5; /* Background color */
+    padding: 15px 0; /* Padding around the navbar */
+    margin-top: 0; /* Remove any margin from the top */
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Aligns it to the top of the viewport */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it stays above other content */
+    box-shadow: none; /* No shadow initially */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+.navbar.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow when scrolled */
+}
+
+.navbar-brand {
+    color: rgb(3, 0, 0); /* Change to your preferred text color */
+    font-size: 50px; /* Adjust the font size for your name */
+    font-weight: bold; /* Make it bold */
+    letter-spacing: 1px; /* Add some spacing between letters */
+    font-family: 'Permanent Marker', cursive;
+    margin-right:auto;
+    margin-left:25px
+}
+
+.navbar-items {
+    display: flex; /* Ensure items are side by side */
+    margin-left: auto; 
+    margin-right: 25px;
+
+}
+
+.nav-link {
+    color: rgb(2, 0, 0); /* Change to your preferred link color */
+    text-decoration: none; /* Removes underline */
+    margin: 0 20px; /* Space between nav items */
+    transition: color 0.3s; /* Smooth transition for color change */
+    font-size: 23px;
+}
+
+.nav-link:hover {
+    color: #ddd; /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    
+    .navbar-items {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Adjust spacing for stacked items */
+    }
+}
+body {
+    padding-top: 80px; /* Adjust based on the height of your navbar */
+}
+/* Project Styles */
+.project-card {
+    border: 1px solid #ccc; /* Adjust as needed */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin-top: 15px; /* Space between project cards */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #fff; /* Background color */
+}
+/* .skills-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 15px; 
+} */
+
+.skill-box {
+    display: inline-block;
+    background-color: #e0e0e0; 
+    border-radius: 15px; 
+    padding: 5px 10px; 
+    margin-right: 10px; 
+    font-size: 14px; 
+    align-items: center;
+}
+
+.skill-box:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.github-link {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Space above link */
+    display: inline-block; /* Allow margin above */
+}
+/* Skills Card Styles */
+
+.skills .card {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Space inside the card */
+    margin: 20px; /* Space outside the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Skills Title Styles */
+.skills-title {
+    font-weight: bold;
+    font-size: 4rem; /* Larger font size for heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Skills Table Styles */
+.skills-table {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+}
+
+/* Skills Column Styles */
+.skills-column {
+    flex: 1; /* Each column takes equal space */
+    margin-right: 20px; /* Space between columns */
+}
+
+/* Remove margin from last column */
+.skills-column:last-child {
+    margin-right: 0; /* No margin on the last column */
+}
+
+/* Skill Box Styles */
+.skill-boxx {
+    background-color: #e7f3ff; /* Light blue background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, background-color 0.3s; /* Transition effect */
+    margin-bottom: 15px; /* Space between skill boxes */
+    margin: 30px;
+}
+
+.skill-boxx:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #cfe9ff; /* Darker blue on hover */
+}
+
+/* Skill Icon Styles */
+.skill-icon {
+    font-size: 2rem; /* Icon size */
+    margin-bottom: 10px; /* Space below the icon */
+    color: #007acc; /* Icon color */
+}
+
+/* Skill Name Styles */
+.skill-name {
+    font-size: 1.2rem; /* Font size for skill name */
+    font-weight: bold; /* Bold skill name */
+}
+/*contact css*/
+footer {
+    background-color: #27272a; /* Background color */
+    padding: 100px 0; /* Increase padding for larger size */
+    color: white; /* Text color for contrast */
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-links a {
+    color: white; /* Adjust for visibility */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #1e90ff; /* Change to any hover color you like */
+}
+/* footer .icon {
+    font-size: 1rem; 
+    color: white; 
+    margin: 0 10px; 
+    transition: transform 0.2s; 
+}
+
+
+footer .icon:hover {
+    transform: scale(1.2); 
+    color: #ddd; 
+} */
+
+
+  
+
+
