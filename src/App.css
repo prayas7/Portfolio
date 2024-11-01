@@ -17,6 +17,7 @@ section {
     padding: 80px; /* Adds some padding */
     text-align: center; /* Centers text in each section */
 }
+
 /* Home Section Styling */
 .home-section {
     display: flex;
@@ -28,23 +29,19 @@ section {
     display: flex;
     align-items: center;
 }
+
 .text-content h1 {
     font-size: 2.5rem;
 }
 
-
-
-
 /* Profile Image Style */
 .profile-image {
     border-radius: 50%; /* Makes the image circular */
-    width: 450px; /* Increase the size as needed */
-    height: 450px; /* Increase the size as needed */
+    width: 450px; /* Default size */
+    height: 450px; /* Default size */
     object-fit: cover;
-    display: auto; /* Ensures the image is block-level for proper centering */
-    margin:  20px; /* Centers the image horizontally */
-  }
-  
+    margin: 20px; /* Centers the image horizontally */
+}
 
 /* Paragraph Styles */
 .home-paragraph,
@@ -57,7 +54,7 @@ section {
 /* Card Styles */
 .card {
     width: 100%; /* Full width */
-    height: 100vh; /* Full viewport height */
+    height: auto; /* Adjust height to content */
     margin: 20px 0; /* Vertical margin for spacing from other elements */
     padding: 30px; /* Padding inside the card */
     border-radius: 10px; /* Rounded corners */
@@ -74,7 +71,7 @@ section {
     transform: scale(1.02); /* Slightly enlarge card on hover */
 }
 
-/* Make cards responsive */
+/* Responsive adjustments for Cards */
 @media (max-width: 768px) {
     .card {
         margin: 10px; /* Reduce margin on smaller screens */
@@ -89,7 +86,6 @@ section {
     align-items: center;
     background-color: #f1efe5; /* Background color */
     padding: 15px 0; /* Padding around the navbar */
-    margin-top: 0; /* Remove any margin from the top */
     position: fixed; /* Fixes the navbar at the top */
     top: 0; /* Aligns it to the top of the viewport */
     width: 100%; /* Full width */
@@ -97,6 +93,7 @@ section {
     box-shadow: none; /* No shadow initially */
     transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
 }
+
 .navbar.scrolled {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow when scrolled */
 }
@@ -107,15 +104,12 @@ section {
     font-weight: bold; /* Make it bold */
     letter-spacing: 1px; /* Add some spacing between letters */
     font-family: 'Permanent Marker', cursive;
-    margin-right:auto;
-    margin-left:25px
+    margin: 0 25px; /* Center the brand with equal spacing */
 }
 
 .navbar-items {
     display: flex; /* Ensure items are side by side */
     margin-left: auto; 
-    margin-right: 25px;
-
 }
 
 .nav-link {
@@ -130,7 +124,7 @@ section {
     color: #ddd; /* Change color on hover */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for Navbar */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column; /* Stack items vertically on small screens */
@@ -144,9 +138,11 @@ section {
         margin: 10px 0; /* Adjust spacing for stacked items */
     }
 }
+
 body {
     padding-top: 80px; /* Adjust based on the height of your navbar */
 }
+
 /* Project Styles */
 .project-card {
     border: 1px solid #ccc; /* Adjust as needed */
@@ -156,35 +152,8 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     background-color: #fff; /* Background color */
 }
-/* .skills-container {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
-    margin-top: 15px; 
-} */
 
-.skill-box {
-    display: inline-block;
-    background-color: #e0e0e0; 
-    border-radius: 15px; 
-    padding: 5px 10px; 
-    margin-right: 10px; 
-    font-size: 14px; 
-    align-items: center;
-}
-
-.skill-box:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-}
-
-.github-link {
-    color: #007bff; /* Bootstrap primary color */
-    text-decoration: none; /* Remove underline */
-    margin-top: 10px; /* Space above link */
-    display: inline-block; /* Allow margin above */
-}
 /* Skills Card Styles */
-
 .skills .card {
     background-color: #ffffff; /* White background */
     padding: 20px; /* Space inside the card */
@@ -226,7 +195,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s, background-color 0.3s; /* Transition effect */
     margin-bottom: 15px; /* Space between skill boxes */
-    margin: 30px;
 }
 
 .skill-boxx:hover {
@@ -246,7 +214,8 @@ body {
     font-size: 1.2rem; /* Font size for skill name */
     font-weight: bold; /* Bold skill name */
 }
-/*contact css*/
+
+/* Contact Styles */
 footer {
     background-color: #27272a; /* Background color */
     padding: 100px 0; /* Increase padding for larger size */
@@ -280,20 +249,27 @@ footer p {
 .social-links a:hover {
     color: #1e90ff; /* Change to any hover color you like */
 }
-/* footer .icon {
-    font-size: 1rem; 
-    color: white; 
-    margin: 0 10px; 
-    transition: transform 0.2s; 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 250px; /* Adjust size for mobile */
+        height: 250px; /* Adjust size for mobile */
+    }
+
+    .text-content h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .skills-title {
+        font-size: 2.5rem; /* Smaller size for mobile */
+    }
+
+    footer h1 {
+        font-size: 2rem; /* Smaller size for footer heading */
+    }
+
+    footer p {
+        font-size: 1rem; /* Smaller size for footer paragraph */
+    }
 }
-
-
-footer .icon:hover {
-    transform: scale(1.2); 
-    color: #ddd; 
-} */
-
-
-  
-
-
