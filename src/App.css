@@ -9,36 +9,39 @@ html, body {
 
 /* Section Styles */
 section {
-    height: 100vh; /* Each section takes full viewport height */
+    height: auto; /* Allow sections to expand based on content */
     display: flex; /* Flexbox for alignment */
     flex-direction: column; /* Stacks children vertically */
     justify-content: center; /* Centers children vertically */
     align-items: center; /* Centers children horizontally */
-    padding: 80px; /* Adds some padding */
+    padding: 20px; /* Reduced padding for smaller screens */
     text-align: center; /* Centers text in each section */
 }
 
 /* Home Section Styling */
 .home-section {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
     padding: 50px; /* Adjust padding as needed */
 }
 
 .home-content {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
 }
 
+/* Header Text Styling */
 .text-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjust font size for responsiveness */
 }
 
 /* Profile Image Style */
 .profile-image {
     border-radius: 50%; /* Makes the image circular */
-    width: 450px; /* Default size */
-    height: 450px; /* Default size */
+    width: 250px; /* Responsive size for mobile */
+    height: 250px; /* Responsive size for mobile */
     object-fit: cover;
     margin: 20px; /* Centers the image horizontally */
 }
@@ -46,17 +49,17 @@ section {
 /* Paragraph Styles */
 .home-paragraph,
 .about-paragraph {
-    max-width: 600px; /* Optional: limits the width of the paragraph */
+    max-width: 100%; /* Allows full width on mobile */
     margin: 0 auto; /* Centers the paragraph block */
-    padding: 0 20px; /* Optional: adds some horizontal padding */
+    padding: 0 10px; /* Reduced horizontal padding */
 }
 
 /* Card Styles */
 .card {
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height to content */
+    width: 90%; /* Full width with some margin */
+    height: auto; /* Allows cards to expand based on content */
     margin: 20px 0; /* Vertical margin for spacing from other elements */
-    padding: 30px; /* Padding inside the card */
+    padding: 20px; /* Padding inside the card */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     background-color: #fff; /* Card background color */
@@ -71,60 +74,22 @@ section {
     transform: scale(1.02); /* Slightly enlarge card on hover */
 }
 
-/* Responsive adjustments for Cards */
-@media (max-width: 768px) {
-    .card {
-        margin: 10px; /* Reduce margin on smaller screens */
-    }
-}
-
 /* Navbar Styles */
 .navbar {
     display: flex;
     flex-direction: row; /* Ensures the items are in a row */
-    justify-content: center; /* Centers the navbar items horizontally */
+    justify-content: space-between; /* Space between items */
     align-items: center;
     background-color: #f1efe5; /* Background color */
-    padding: 15px 0; /* Padding around the navbar */
+    padding: 10px 20px; /* Padding around the navbar */
     position: fixed; /* Fixes the navbar at the top */
     top: 0; /* Aligns it to the top of the viewport */
     width: 100%; /* Full width */
     z-index: 1000; /* Ensures it stays above other content */
     box-shadow: none; /* No shadow initially */
-    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
 }
 
-.navbar.scrolled {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow when scrolled */
-}
-
-.navbar-brand {
-    color: rgb(3, 0, 0); /* Change to your preferred text color */
-    font-size: 50px; /* Adjust the font size for your name */
-    font-weight: bold; /* Make it bold */
-    letter-spacing: 1px; /* Add some spacing between letters */
-    font-family: 'Permanent Marker', cursive;
-    margin: 0 25px; /* Center the brand with equal spacing */
-}
-
-.navbar-items {
-    display: flex; /* Ensure items are side by side */
-    margin-left: auto; 
-}
-
-.nav-link {
-    color: rgb(2, 0, 0); /* Change to your preferred link color */
-    text-decoration: none; /* Removes underline */
-    margin: 0 20px; /* Space between nav items */
-    transition: color 0.3s; /* Smooth transition for color change */
-    font-size: 23px;
-}
-
-.nav-link:hover {
-    color: #ddd; /* Change color on hover */
-}
-
-/* Responsive adjustments for Navbar */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column; /* Stack items vertically on small screens */
@@ -132,23 +97,31 @@ section {
     
     .navbar-items {
         flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center align items */
+        width: 100%; /* Full width for items */
     }
 
     .nav-link {
         margin: 10px 0; /* Adjust spacing for stacked items */
+        font-size: 18px; /* Smaller font size for mobile */
     }
-}
 
-body {
-    padding-top: 80px; /* Adjust based on the height of your navbar */
+    /* Adjust section padding and font sizes */
+    section {
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
 }
 
 /* Project Styles */
 .project-card {
     border: 1px solid #ccc; /* Adjust as needed */
     border-radius: 8px; /* Rounded corners */
-    padding: 20px;
-    margin-top: 15px; /* Space between project cards */
+    padding: 10px; /* Reduced padding */
+    margin-top: 10px; /* Space between project cards */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     background-color: #fff; /* Background color */
 }
@@ -156,81 +129,31 @@ body {
 /* Skills Card Styles */
 .skills .card {
     background-color: #ffffff; /* White background */
-    padding: 20px; /* Space inside the card */
-    margin: 20px; /* Space outside the card */
+    padding: 10px; /* Space inside the card */
+    margin: 10px; /* Space outside the card */
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Skills Title Styles */
 .skills-title {
     font-weight: bold;
-    font-size: 4rem; /* Larger font size for heading */
-    margin-bottom: 10px; /* Space below the heading */
+    font-size: 2rem; /* Adjust font size for smaller screens */
 }
 
-/* Skills Table Styles */
-.skills-table {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between columns */
-}
-
-/* Skills Column Styles */
-.skills-column {
-    flex: 1; /* Each column takes equal space */
-    margin-right: 20px; /* Space between columns */
-}
-
-/* Remove margin from last column */
-.skills-column:last-child {
-    margin-right: 0; /* No margin on the last column */
-}
-
-/* Skill Box Styles */
-.skill-boxx {
-    background-color: #e7f3ff; /* Light blue background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Space inside the box */
-    text-align: center; /* Center text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s, background-color 0.3s; /* Transition effect */
-    margin-bottom: 15px; /* Space between skill boxes */
-}
-
-.skill-boxx:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    background-color: #cfe9ff; /* Darker blue on hover */
-}
-
-/* Skill Icon Styles */
-.skill-icon {
-    font-size: 2rem; /* Icon size */
-    margin-bottom: 10px; /* Space below the icon */
-    color: #007acc; /* Icon color */
-}
-
-/* Skill Name Styles */
-.skill-name {
-    font-size: 1.2rem; /* Font size for skill name */
-    font-weight: bold; /* Bold skill name */
-}
-
-/* Contact Styles */
+/* Contact CSS */
 footer {
     background-color: #27272a; /* Background color */
-    padding: 100px 0; /* Increase padding for larger size */
+    padding: 50px 20px; /* Reduced padding */
     color: white; /* Text color for contrast */
     text-align: center;
 }
 
 footer h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem; /* Responsive font size */
 }
 
 footer p {
-    font-size: 1.1rem;
-    margin-top: 10px;
+    font-size: 1rem; /* Responsive font size */
 }
 
 .social-links {
@@ -238,6 +161,7 @@ footer p {
     display: flex;
     gap: 15px;
     justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
 }
 
 .social-links a {
@@ -248,28 +172,4 @@ footer p {
 
 .social-links a:hover {
     color: #1e90ff; /* Change to any hover color you like */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .profile-image {
-        width: 250px; /* Adjust size for mobile */
-        height: 250px; /* Adjust size for mobile */
-    }
-
-    .text-content h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
-    }
-
-    .skills-title {
-        font-size: 2.5rem; /* Smaller size for mobile */
-    }
-
-    footer h1 {
-        font-size: 2rem; /* Smaller size for footer heading */
-    }
-
-    footer p {
-        font-size: 1rem; /* Smaller size for footer paragraph */
-    }
 }
