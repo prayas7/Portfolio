@@ -1,156 +1,156 @@
 /* Global Styles */
-html, body {
-    background-color: #f1efe5;
-    height: 100%; 
-    margin: 0; 
-    font-family: Arial, sans-serif; 
-    scroll-behavior: smooth;
+html,
+body {
+  background-color: #f1efe5;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Section Styles */
 section {
-    height: 100vh; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 80px; 
-    text-align: center; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  text-align: center;
 }
 /* Home Section Styling */
 .home-section {
-    display: flex;
-    align-items: center;
-    padding: 50px; 
+  display: flex;
+  align-items: center;
+  padding: 50px;
 }
 
 .home-content {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .text-content h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 /* Profile Image Style */
 .profile-image {
-    border-radius: 50%; 
-    width: 450px; 
-    height: 450px; 
-    object-fit: cover;
-    display: auto; 
-    margin:  20px; 
-  }
-  
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  display: auto;
+  margin: 20px;
+}
+
 /* Paragraph Styles */
 .home-paragraph,
 .about-paragraph {
-    max-width: 600px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Card Styles */
 .card {
-    width: 100%; 
-    height: 100vh; 
-    margin: 20px 0; 
-    padding: 30px; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
-    background-color: #fff; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+  width: 100%;
+  height: 100vh;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hover Effect for Cards */
 .card:hover {
-    transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
 /* Make cards responsive */
 @media (max-width: 768px) {
-    .card {
-        margin: 10px; 
-    }
+  .card {
+    margin: 10px;
+  }
 }
 
 /* Navbar Styles */
 .navbar {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center;
-    background-color: #f1efe5; 
-    padding: 15px 0; 
-    margin-top: 0; 
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    z-index: 1000; 
-    box-shadow: none; 
-    transition: box-shadow 0.3s ease; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1efe5;
+  padding: 15px 0;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
 }
 .navbar.scrolled {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
-    color: rgb(3, 0, 0); 
-    font-size: 50px; 
-    font-weight: bold; 
-    letter-spacing: 1px; 
-    font-family: 'Permanent Marker', cursive;
-    margin-right:auto;
-    margin-left:25px
+  color: rgb(3, 0, 0);
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Permanent Marker", cursive;
+  margin-right: auto;
+  margin-left: 25px;
 }
 
 .navbar-items {
-    display: flex; 
-    margin-left: auto; 
-    margin-right: 25px;
-
+  display: flex;
+  margin-left: auto;
+  margin-right: 25px;
 }
 
 .nav-link {
-    color: rgb(2, 0, 0); 
-    text-decoration: none; 
-    margin: 0 20px; 
-    transition: color 0.3s; 
-    font-size: 23px;
+  color: rgb(2, 0, 0);
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s;
+  font-size: 23px;
 }
 
 .nav-link:hover {
-    color: #ddd; 
+  color: #ddd;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; 
-    }
-    
-    .navbar-items {
-        flex-direction: column;
-    }
+  .navbar {
+    flex-direction: column;
+  }
 
-    .nav-link {
-        margin: 10px 0; 
-    }
+  .navbar-items {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
 }
 body {
-    padding-top: 80px; 
+  padding-top: 80px;
 }
 /* Project Styles */
 .project-card {
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    padding: 20px;
-    margin-top: 15px; 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
-    background-color: #fff; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 /* .skills-container {
     display: flex;
@@ -160,121 +160,120 @@ body {
 } */
 
 .skill-box {
-    display: inline-block;
-    background-color: #e0e0e0; 
-    border-radius: 15px; 
-    padding: 5px 10px; 
-    margin-right: 10px; 
-    font-size: 14px; 
-    align-items: center;
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  align-items: center;
 }
 
 .skill-box:hover {
-    transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .github-link {
-    color: #007bff; 
-    text-decoration: none; 
-    margin-top: 10px; 
-    display: inline-block; 
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
 }
 /* Skills Card Styles */
 
 .skills .card {
-    background-color: #ffffff; 
-    padding: 20px; 
-    margin: 20px; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Skills Title Styles */
 .skills-title {
-    font-weight: bold;
-    font-size: 4rem; 
-    margin-bottom: 10px; 
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 10px;
 }
 
 /* Skills Table Styles */
 .skills-table {
-    display: flex; 
-    justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Skills Column Styles */
 .skills-column {
-    flex: 1; 
-    margin-right: 20px;
+  flex: 1;
+  margin-right: 20px;
 }
 
-
 .skills-column:last-child {
-    margin-right: 0; 
+  margin-right: 0;
 }
 
 /* Skill Box Styles */
 .skill-boxx {
-    background-color: #e7f3ff; 
-    border-radius: 10px; 
-    padding: 20px; 
-    text-align: center; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s, background-color 0.3s; 
-    margin-bottom: 15px; 
-    margin: 30px;
+  background-color: #e7f3ff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+  margin-bottom: 15px;
+  margin: 30px;
 }
 
 .skill-boxx:hover {
-    transform: scale(1.05); 
-    background-color: #cfe9ff; 
+  transform: scale(1.05);
+  background-color: #cfe9ff;
 }
 
 /* Skill Icon Styles */
 .skill-icon {
-    font-size: 2rem; 
-    margin-bottom: 10px; 
-    color: #007acc; 
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #007acc;
 }
 
 /* Skill Name Styles */
 .skill-name {
-    font-size: 1.2rem; 
-    font-weight: bold; 
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 /*contact css*/
 footer {
-    background-color: #27272a; 
-    padding: 100px 0; 
-    color: white; 
-    text-align: center;
+  background-color: #27272a;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
 }
 
 footer h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 footer p {
-    font-size: 1.1rem;
-    margin-top: 10px;
+  font-size: 1.1rem;
+  margin-top: 10px;
 }
 
 .social-links {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 .social-links a {
-    color: white; 
-    font-size: 1.5rem;
-    transition: color 0.3s;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #1e90ff; 
+  color: #1e90ff;
 }
 /* footer .icon {
     font-size: 1rem; 
@@ -288,8 +287,3 @@ footer .icon:hover {
     transform: scale(1.2); 
     color: #ddd; 
 } */
-
-
-  
-
-
